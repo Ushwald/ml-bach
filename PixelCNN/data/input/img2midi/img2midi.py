@@ -8,7 +8,7 @@ lowerBoundNote = 21
 def column2notes(column):
     notes = []
     for i in range(len(column)):
-        if column[i] > 255 / 2:
+        if column[i] > 0:
             notes.append(i + lowerBoundNote)
     return notes
 
